@@ -1,0 +1,5 @@
+TRAIN
+python train.py --data_dir data/eeg_fpz_cz --output_dir output --n_folds 20 --fold_idx 0 --pretrain_epochs 100 --finetune_epochs 200 --resume False
+
+PREDICT
+python predict.py --data_dir data/test --model_dir output --output_dir output_SNU
